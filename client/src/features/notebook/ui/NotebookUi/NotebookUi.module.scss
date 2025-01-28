@@ -1,0 +1,44 @@
+.card {
+    width: 18rem;
+    text-align: center;
+    font-size: 1.5rem; // Уменьшил размер шрифта для лучшего восприятия
+    border-radius: 15px; // Скругление углов
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Тень для эффекта глубины
+    transition: transform 0.3s, box-shadow 0.3s; // Плавный переход для эффекта
+  
+    &:hover {
+      transform: scale(1.05); // Увеличение при наведении
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); // Увеличенная тень при наведении
+    }
+  }
+  
+  .button {
+    background: none; // Убираем фон
+    border: none; // Убираем границы
+    cursor: pointer; // Указатель при наведении
+    padding: 10px; // Отступы для кнопки
+    display: inline-flex; // Используем flex для выравнивания
+    align-items: center; // Вертикальное выравнивание
+    justify-content: center; // Горизонтальное выравнивание
+  }
+  
+  .icon {
+    width: 30px; // Ширина иконки
+    height: 30px; // Высота иконки
+    transition: transform 0.2s; // Плавный переход для иконки
+  
+    &:hover {
+      transform: scale(1.1); // Увеличение иконки при наведении
+    }
+  }
+  
+  .actions {
+    display: flex; // Используем flex для выравнивания кнопок
+    justify-content: space-between; // Равномерное распределение кнопок
+    margin-top: 10px; // Отступ сверху
+  }
+  
+  .title {
+    font-size: 20px;
+    font-weight: 700;
+  }
